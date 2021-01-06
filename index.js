@@ -32,6 +32,7 @@ const startQuestions = () => {
             ask(questions).then(results => {
                 let clearedArguments = [];
                 results.forEach(line => {
+                    console.log(line);
                     if (line.split(' ').length === m) {
                         clearedArguments.push(line);
                     } else {
@@ -107,7 +108,7 @@ function brickWork(...args) {
         // and auguments secondLayer with empty arrays to be filled
         console.log(argumentsArray[2]);
         for (let i = 1; i <= n; i++) {
-            layers.firstLayer["line" + i] = argumentsArray[2][i - 1].split("");
+            layers.firstLayer["line" + i] = argumentsArray[2][i - 1].split(" ");
             layers.secondLayer["line" + i] = [];
         }
 
