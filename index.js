@@ -22,11 +22,11 @@ const startQuestions = () => {
             let questions = [];
             for (let i = 0; i < n; i++) {
                 if (i === 0) {
-                    questions.push('insert first line with space between bricks: ');
+                    questions.push('insert first line with space between numbers: ');
                 } else if (i === n - 1) {
-                    questions.push('insert last line with space between bricks: ');
+                    questions.push('insert last line with space between numbers: ');
                 } else {
-                    questions.push('insert next line with space between bricks: ');
+                    questions.push('insert next line with space between numbers: ');
                 }
             }
             ask(questions).then(results => {
